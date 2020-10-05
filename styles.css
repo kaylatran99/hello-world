@@ -41,6 +41,34 @@
   transform: rotateY(180deg);
 }
 
+.small-text{
+  font-size: 28px !important;
+}
+
+.nav{
+  padding-bottom: 6px;
+  font-size: 1em;
+  font-family: 'Poppins';
+}
+
+.nav-active{
+  color: DeepSkyBlue;
+  border-bottom: 2px solid DeepSkyBlue;
+}
+
+.nav-icons{
+  font-size: 1em;
+  vertical-align: middle;
+}
+
+.nav-inactive{
+  color: rgb(207, 127, 191);
+}
+
+.nav-inactive:hover{
+  color: DeepSkyBlue;
+}
+
 @-webkit-keyframes flash {
 	0% { opacity: 1; } 
 	50% { opacity: .1; } 
