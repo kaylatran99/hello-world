@@ -1,0 +1,55 @@
+.header{
+  font-size: 4em;
+  color: #a38da8;
+  text-align: center;
+  font-family: 'Poppins';
+  vertical-align: middle;
+  margin-top: 20%;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 5s infinite;
+}
+
+.flip {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+@-webkit-keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
+
+
